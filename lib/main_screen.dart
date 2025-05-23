@@ -12,9 +12,24 @@ class MainScreen extends StatelessWidget {
         child: Column(
           spacing: 25,
           children: [
-            InputCounterBox(color: Colors.green),
-            InputCounterBox(color: Colors.cyan),
-            InputCounterBox(color: Colors.pink),
+            InputCounterBox(
+              color: Colors.green,
+              onLengthChanged: () {
+                debugPrint('Box 1 wurde verändert');
+              },
+            ),
+            InputCounterBox(
+              color: Colors.cyan,
+              onLengthChanged: () {
+                debugPrint('Box 2 wurde verändert');
+              },
+            ),
+            InputCounterBox(
+              color: Colors.pink,
+              onLengthChanged: () {
+                debugPrint('Box 3 wurde verändert');
+              },
+            ),
           ],
         ),
       ),
