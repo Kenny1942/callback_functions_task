@@ -8,13 +8,13 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Padding(
-        padding: const EdgeInsets.all(8.0),
+        padding: const EdgeInsets.all(16.0),
         child: Column(
-          spacing: 16,
+          spacing: 25,
           children: [
-            InputCounterBox(),
-            InputCounterBox(),
-            InputCounterBox(),
+            InputCounterBox(color: Colors.green),
+            InputCounterBox(color: Colors.cyan),
+            InputCounterBox(color: Colors.pink),
           ],
         ),
       ),
